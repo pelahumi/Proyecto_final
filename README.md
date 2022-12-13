@@ -6,7 +6,7 @@ Buscaremos valores nulos y, en caso de que los hubiese, o los sustituimos por ot
 Esto lo podemos ver fácilmente con la siguiente función:
 
 ´´´python 3
-df.isna().sum()
+  df.isna().sum()
 ´´´
 
 Sumara los valores nulos que hay en cada columna.

@@ -1,7 +1,7 @@
 # Proyecto_final
 En este proyecto se intentará predecir el precio de una casa en función de sus características utilizando un modelo de regresión lineal.
 
-##Índice
+## Índice
   - [Librerías necesarias](#1)
   - [Limpieza de datos](#2)
   - [Interpretación de los datos](#3)

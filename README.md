@@ -13,7 +13,7 @@ import warnings
 warnings.filterwarnings('ignore')
 ```
 
-### Limpieza de datos
+## Limpieza de datos
 Lo primero es leer el archivo donde están los datos (csv o excel):
 ```
 df = pd.read_excel("Ubicación del archivo.xls")
@@ -38,6 +38,27 @@ O si queremos también podemos graficar un scatter plot con la recta de regresi�
 
 ![recta regresion](https://github.com/pelahumi/Proyecto_final/blob/main/Img/regresion.png)
 
+## Modelo de regresión
+Para este apartado necesitaremos las siguientes librerías:
+```
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.linear_model import LinearRegression
+```
+Dividiremos en variables dependientes e independientes y los datos en train (80% de los datos) y test (20% de los datos). 
+El modelo que utilizaremos será de regresión lineal.
+Los scalers se usan para hacer transforaciones de los datos y  así ajustarlos. Crearemos tres modelos: uno sin scalers, uno con el standard scaler y otro con el min max scaler.
+Solo falta entrenar el modelo y realizar las predicciones.
+
+## Evaluación del modelo
+Importamos la siguiente librería:
+```
+from sklearn.metrics import mean_squared_error as mse
+```
+Por último, calculamos el score de nuestros tres modelos y vemos la precisión de los mismos. También, para asegurarnos con mayor seguridad la veracidad de nuestros modelos podemos calcular el error medio: 
+```
+mse(y_train, ln.predict(X_train), squared=False)
+mse(y_test, preds, squared=False)
 
 
 

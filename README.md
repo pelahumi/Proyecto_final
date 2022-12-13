@@ -31,7 +31,12 @@ Para ver la correlación de las columnas de nuestro dataset podemos usar:
 df.corr()
 ```
 Sin embargo, para tener una perspectiva más visual e intuitiva podemos usar un gráfico de calor como el siguiente:
-[FOTO]
+
+![heatmap](https://github.com/pelahumi/Proyecto_final/blob/main/Img/heatmap.png)
+
+O si queremos también podemos graficar un scatter plot con la recta de regresión como esta:
+
+![recta regresion](https://github.com/pelahumi/Proyecto_final/blob/main/Img/regresion.png)
 
 
 

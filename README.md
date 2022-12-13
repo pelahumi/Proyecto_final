@@ -59,11 +59,3 @@ Por último, calculamos el score de nuestros tres modelos y vemos la precisión 
 ```
 mse(y_train, ln.predict(X_train), squared=False)
 mse(y_test, preds, squared=False)
-
-
-
-
-
-
-
-

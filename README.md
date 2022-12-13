@@ -1,7 +1,16 @@
 # Proyecto_final
 En este proyecto se intentará predecir el precio de una casa en función de sus características utilizando un modelo de regresión lineal.
 
-## Librerías necesarias
+##Índice
+  - [Librerías necesarias](#1)
+  - [Limpieza de datos](#2)
+  - [Interpretación de los datos](#3)
+  - [Modelo de regresión](#4)
+  - [Evaluación del modelo](#5)
+  
+---
+
+## Librerías necesarias<a name="1"></a>
 Para este proyecto necesitaremos importar las siguinetes librerías:
 ```python3
 import pandas as pd
@@ -13,7 +22,7 @@ import warnings
 warnings.filterwarnings('ignore')
 ```
 
-## Limpieza de datos
+## Limpieza de datos<a name="2"></a>
 Lo primero es leer el archivo donde están los datos (csv o excel):
 ```
 df = pd.read_excel("Ubicación del archivo.xls")
@@ -25,7 +34,7 @@ df.isna().sum()
 ```
 Sumará los valores nulos que hay en cada columna.
 
-## Interpretación de los datos
+## Interpretación de los datos<a name="3"></a>
 Para ver la correlación de las columnas de nuestro dataset podemos usar:
 ```
 df.corr()
@@ -38,7 +47,7 @@ O si queremos también podemos graficar un scatter plot con la recta de regresi�
 
 ![recta regresion](https://github.com/pelahumi/Proyecto_final/blob/main/Img/regresion.png)
 
-## Modelo de regresión
+## Modelo de regresión<a name="4"></a>
 Para este apartado necesitaremos las siguientes librerías:
 ```
 from sklearn.model_selection import train_test_split
@@ -50,7 +59,7 @@ El modelo que utilizaremos será de regresión lineal.
 Los scalers se usan para hacer transforaciones de los datos y  así ajustarlos. Crearemos tres modelos: uno sin scalers, uno con el standard scaler y otro con el min max scaler.
 Solo falta entrenar el modelo y realizar las predicciones.
 
-## Evaluación del modelo
+## Evaluación del modelo<a name="5"></a>
 Importamos la siguiente librería:
 ```
 from sklearn.metrics import mean_squared_error as mse

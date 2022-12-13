@@ -11,15 +11,13 @@ import numpy as np
 from statsmodels.api import add_constant, OLS
 import warnings
 warnings.filterwarnings('ignore')
-
-
-
+```
 
 ### Limpieza de datos
 Buscaremos valores nulos y, en caso de que los hubiese, o los sustituimos por otros más apropiados o eliminamos la fila entera que los contenga. En nuestro caso no hay ningún valor nulo.
 Esto lo podemos ver fácilmente con la siguiente función:
 
-´´´python 3
+´´´python3
   df.isna().sum()
 ´´´
 

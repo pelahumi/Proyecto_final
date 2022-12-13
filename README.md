@@ -14,9 +14,30 @@ warnings.filterwarnings('ignore')
 ```
 
 ### Limpieza de datos
+Lo primero es leer el archivo donde están los datos (csv o excel):
+```
+df = pd.read_excel("Ubicación del archivo.xls")
+```
 Buscaremos valores nulos y, en caso de que los hubiese, o los sustituimos por otros más apropiados o eliminamos la fila entera que los contenga. En nuestro caso no hay ningún valor nulo.
 Esto lo podemos ver fácilmente con la siguiente función:
 ```
 df.isna().sum()
 ```
 Sumará los valores nulos que hay en cada columna.
+
+## Interpretación de los datos
+Para ver la correlación de las columnas de nuestro dataset podemos usar:
+```
+df.corr()
+```
+Sin embargo, para tener una perspectiva más visual e intuitiva podemos usar un gráfico de calor como el siguiente:
+[FOTO]
+
+
+
+
+
+
+
+
+
